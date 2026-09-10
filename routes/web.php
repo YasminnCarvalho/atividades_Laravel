@@ -17,3 +17,15 @@ Route::get('/alunos', function () {
 Route::get('/contato', function () {
     return 'Entre em contato: contato@escola.com';
 });
+
+Route::get('/produto/{id}', function ($id) {
+    return "Você está vendo o produto de ID: $id";
+});
+
+Route::get('/categoria/{id}', function ($id) {
+    return "Você está vendo a categoria de ID: $id";
+});
+
+Route::get('/usuario/{id}', function ($id) {
+    return "Você está vendo o usuário de ID: $id";
+});
